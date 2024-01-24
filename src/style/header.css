@@ -9,9 +9,20 @@ header {
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    background-color: aquamarine;
     height: 76px;
     padding: 0 28px;
+}
+
+.nav-span {
+    text-decoration: none;
+    color: #000000;
+    transition: background-color 0.3s, color 0.3s, font-family 0.3s; /* Adiciona uma transição suave de cor e fonte ao passar o mouse */
+}
+
+.nav-link:hover .nav-span {
+    background-color: #a4beda; /* Altera a cor de fundo para azul suave ao passar o mouse */
+    color: #ffffff; /* Altera a cor do texto para branco ao passar o mouse */
+    font-family: 'Nova Fonte', sans-serif; /* Altera a fonte ao passar o mouse */
 }
 
 .nav {
@@ -21,6 +32,7 @@ header {
 .nav-link {
     text-decoration: none;
     margin: 0 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .logo {
@@ -37,12 +49,38 @@ header {
 }
 
 .contact-link {
-    color: aliceblue;
-    background: #000000;
+    color: rgb(4, 5, 5);
+    background: #59c5b3;
     border-radius: 81px;
     font-size: 16px;
     height: 42px;
     padding: 0 24px;
     display: flex;
     align-items: center;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .contact-link {
+        margin-top: 15px;
+    }
 }
