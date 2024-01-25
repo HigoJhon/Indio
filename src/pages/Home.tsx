@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import "../style/home.css";
 import data from "../img/home/Images";
+import rio from "../img/home/rio.jpeg";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 
@@ -17,6 +18,7 @@ const Home = () => {
       <div className="div-header">
         <Header />
       </div>  
+      <img className="rio" src={rio} alt="imagem de fundo" />
       <div className="div-home">
         <div className="div-part" >
           <div className="div-filter">
