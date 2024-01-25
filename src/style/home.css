@@ -2,6 +2,88 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+  }
   
+  a {
+    text-decoration: none;
+    color: var(--black-color);
+  }
+  
+  .div-home {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+  }
+  
+  .image-indio {
+    width: 40vh;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-left: 30px;
+  }
+
+  .text-indio {
+    margin-left: 40px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--black-color);
+  }
+  
+  .map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .div-filter,
+  .div-opt,
+  .div-part {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div-filter {
+    border-right: 1px solid black;
+    padding-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .div-opt {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .div-part {
+    flex-direction: row;
+  }
+  
+  @media only screen and (max-width: 912px) {
+    .div-home {
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+
+    .div-part {
+        margin: 20px;
+    }
+
+    .div-filter {
+        border-right: 1px solid black;
+        padding-right: 9px;
+    }
+
+    .text-indio {
+        margin-left: 10px;
+    }
+
+    .image-indio {
+        margin: 20px;
+        width: 100%;
+        height: 40vh;
+    }
+
+  }
   
